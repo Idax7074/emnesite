@@ -1,0 +1,351 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "brødtekst", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+    background-color: #D6C7B2;
+}
+
+main {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+@font-face {
+    font-family: "overskrift";
+    src: url("titilliumweb-semibold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "underoverskrift";
+    src: url("titilliumweb-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "brødtekst";
+    src: url("pontanosans-regular-webfont.woff2") format("woff2");
+}
+
+nav {
+    --less-than:700;
+    --burger-lines: #A0816C;
+    --burger-border:var(--burger-lines)
+}
+
+
+h1 {
+    font-family: "overksrift", sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin-block: 20px;
+}
+
+h2 {
+    font-family: "underoverksrift", sans-serif;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: "underoverskrift", sans-serif;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: "underoverskrift", sans-serif;
+    font-size: 1.2em;
+}
+
+p {
+    font-family: "brødtekst", sans-serif;
+    font-size: 1.1rem;
+}
+
+ul {
+    font-family: "brødtekst", sans-serif;
+    font-size: 1.3rem;
+    list-style: none;
+    text-align: center;
+}
+
+.order p {
+    font-family: "brødtekst", sans-serif;
+    font-size: 1.3rem;
+    padding-block: 10px;
+}
+
+.order {
+    padding-block: 15px;
+}
+
+.ingredienser {
+    padding-block: 15px;
+}
+
+.ingredienser ul {
+    padding-block: 10px;
+}
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    margin-block: 20px;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+span {
+    display: grid;
+    justify-content: center;
+}
+
+.forside {
+    background-image: url(img/lysere_beige_pattern.webp);
+    background-size: cover;                   
+    background-position: center center;
+}
+
+.forside img {
+    padding-bottom: 10px;
+}
+
+.card{
+    width: 70%;
+    justify-self: center;
+}
+
+.card_1 {
+    background-image: url(img/green-flower_patteren.webp);
+    background-size: 600px;
+    background-position: center center;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.card_2 {
+    background-image: url(img/green-flower_patteren.webp);
+    background-size: 600px;
+    background-position: center center;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.card_3 {
+    background-image: url(img/green-flower_patteren.webp);
+    background-size: 600px;
+    background-position: center center;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.card_4 {
+    background-image: url(img/green-flower_patteren.webp);
+    background-size: 600px;
+    background-position: center center;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu a:visited {
+    color: #A0816C;
+}
+
+a {
+    font-family: "underoverskrift", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.99rem;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 700px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        background-color: #A0816C;
+        box-shadow: 0 12px 28px 0 rgb(0 0 0 /30%);
+        z-index: 1000;
+        position: relative;
+    }
+    nav {
+        /* width: 100%; */
+        height: 80px;
+        flex: 1;
+
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+        /* position: absolute; */
+        margin-inline: auto;
+        justify-content: space-evenly;
+    }
+
+    nav ul li {
+        /* float: left; */
+        margin-top: 20px;
+    }
+
+    nav ul li a {
+        width: 150px;
+        color: white;
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        font-family: "underoverskrift", sans-serif;
+    }
+
+    nav ul li ul {
+        background-color: #A0816C;
+        display: none;
+    }
+
+    nav ul li ul li {
+        float: none;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    .menu a:visited {
+        color: white;
+    }
+
+    h1 {
+        font-family: "overksrift", sans-serif;
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        margin-block: 20px;
+        color: white;
+    }
+
+    h2 {
+        font-family: "underoverskrift", sans-serif;
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-family: "underoverskrift", sans-serif;
+        font-size: 1.9rem;
+    }
+
+    h4 {
+        font-family: "underoverskrift", sans-serif;
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-family: "brødtekst", sans-serif;
+        font-size: 1.5rem;
+    }
+
+    ul {
+        font-family: "brødtekst", sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .order p {
+        font-family: "brødtekst", sans-serif;
+        font-size: 1.5rem;
+        padding-block: 10px;
+    }
+    
+    .order {
+        padding-block: 5px;
+    }
+    
+    .ingredienser {
+        padding-block: 50px;
+    }
+    
+    .ingredienser ul {
+        padding-block: 10px;
+    }
+
+    .card{
+        width: 50%;
+        justify-self: center;
+    }
+
+    .opskrift_1 img {
+        box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -moz-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -webkit-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -khtml-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+    }
+    
+    .opskrift_2 img {
+        box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -moz-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -webkit-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -khtml-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+    }
+    
+    .opskrift_3 img {
+        box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -moz-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -webkit-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -khtml-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+    }
+    
+    .opskrift_4 img {
+        box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -moz-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -webkit-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+        -khtml-box-shadow: 10px 10px 5px rgb(0 0 0 /30%);
+    }
+}
+
+@media  (max-width: 700px) {
+    main {
+        padding-inline: 15px;
+    }
+
+}
+
